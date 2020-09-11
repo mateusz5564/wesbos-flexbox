@@ -60,17 +60,66 @@ section, footer {
 
 /* Flex Container */
 .flex-nav ul {
-  border:1px solid black;
+  border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.flex-nav ul li {
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
 
 @media all and (max-width:1000px) {
 
+  .flex-nav ul li:not(.social) {
+    flex-basis: 50%;
+  }
+
 }
 
-
 @media all and (max-width:500px) {
-  
+  .flex-nav ul li:not(.social) {
+    flex-basis: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-nav {
+    order: -2;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav .open {
+    display: flex;
+  }
+
+  .top {
+    order: -1;
+  }
+
+  .details {
+    order: -1;
+  }
+
+  .signup {
+    order: -1;
+  }
 }
