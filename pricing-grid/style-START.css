@@ -17,6 +17,21 @@ a {
   color:white;
 }
 
+.pricing-grid {
+  display: flex;
+  align-items: center;
+}
+
+.plan {
+  margin: 20px;
+  background: hsla(0, 0%, 100%, 0.199);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
 .plan ul {
   margin: 0;
   padding: 0;
