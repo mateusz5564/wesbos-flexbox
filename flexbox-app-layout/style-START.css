@@ -98,6 +98,27 @@ a.button {
 
 */
 
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+}
+
+.icon-bar {
+  display: flex;
+}
 
 /*
   Overall Layout
