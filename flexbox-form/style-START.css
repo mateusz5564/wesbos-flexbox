@@ -21,6 +21,9 @@ a {
 .cover  {
   height:100vh;
   width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Video*/
@@ -69,3 +72,11 @@ a {
 }
 
 /*Flexbox Starts Here*/
+
+.flex-form {
+  max-width: 80%;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+}
